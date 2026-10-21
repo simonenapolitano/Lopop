@@ -1,0 +1,82 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    position: relative;
+    height: fit-content;
+    background-color: white;
+    width: 80%;
+    display: flex;
+    padding: 10px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+.testiHeader{
+    display: flex;
+    justify-content: space-between;
+    width: 25%;
+}
+
+.bottoneHeader{
+    padding: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    width: fit-content;
+}
+
+.bottoneHeader:hover{
+    background-color: rgb(225, 222, 222);
+    border-radius: 40%;
+}
+
+.bottoniHeaderDestra{
+    display: flex;
+    justify-content: space-between;
+    width: 13%;
+    align-items: center;
+}
+
+.bottoneHeaderDestra{
+    border-radius: 50%;    
+    padding: 5px;
+
+}
+
+.bottoneHeaderDestra:Hover{
+    background-color: rgb(225, 222, 222);
+    cursor: pointer;
+}
+
+.logoLocalizzazione{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+
+.contenitore{
+    border: none;
+}
+
+.logo{
+    width: 30%;
+}
+
+.contenitoreLogo{
+    position: absolute;
+    right: 50%;
+    display: flex;
+    align-items: center;
+    width: 100px;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+a{
+    color: black
+}
