@@ -1,0 +1,69 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.form{
+    position: relative;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+    text-align: center;
+}
+
+.tornaindietro{
+    left: 20px;
+    top: 20px;
+    position: absolute;
+}
+
+input, button{
+    box-sizing: border-box;
+    width: 55%;
+    border-radius: 30px;
+    padding: 10px;
+    font-size: 20px;
+    box-shadow: none;
+    outline: none;
+    border: 1px solid #ccc;
+}
+
+button{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    text-align: center;
+    border-radius: 30px;
+    box-shadow: none;
+    outline: none;
+    border: 1px solid #ccc;
+    background-color: rgba(92, 92, 216, 0.897);
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+button:hover .sideimage{
+    opacity: 0.9;
+}
+
+.sideimage{
+    border-radius: 50%;
+    background-color: rgba(82, 82, 199, 0.897);
+    height: 35px;
+    width: 35px;
+    align-content: center;
+    justify-content: center;
+}
