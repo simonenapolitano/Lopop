@@ -23,8 +23,17 @@ body{
 }
 
 .box img{
-    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    scroll-snap-align: start;
+    width: auto;
+    height: 100%;
     border-radius: 30px;
+    background-color: #F0F0EE;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+
 }
 
 .box div{
@@ -35,16 +44,33 @@ body{
 
 .box{
     display: flex;
-    gap: 15px;
-    margin: 30px;
-    justify-items: center;
+    gap: 100px;
+    height: 380px;
+    margin: 20px;
+    justify-content: space-around;
+}
+
+.bottoneScopri{
+    border-radius: 30px;
+    background-color: #6D6DDC;
+    width: fit-content;
+    padding: 20px;
+    margin: 20px;
+    text-decoration: none;
+    color: white;
+    display: flex;
     align-items: center;
+    gap: 10px;
+}
+
+.bottoneScopri:hover{
+    opacity: 0.9;
 }
 
 .homePage{
    display: flex;
    flex-direction: column;
-   align-content: center;
+   align-items: center;
    justify-content: center;
 }
 
