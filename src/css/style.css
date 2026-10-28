@@ -1,3 +1,7 @@
+html {
+    scrollbar-gutter: stable;
+}
+
 body{
     margin: 0;
     padding: 0;
@@ -54,7 +58,7 @@ body{
     border-radius: 30px;
     background-color: #6D6DDC;
     width: fit-content;
-    padding: 20px;
+    padding: 10px;
     margin: 20px;
     text-decoration: none;
     color: white;
@@ -68,10 +72,10 @@ body{
 }
 
 .homePage{
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .header{
@@ -174,4 +178,48 @@ body{
 
 a{
     color: black;
+}
+
+.titolo{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+}
+
+hr{
+    width: 99%;
+}
+
+.headerCompleto {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: white; 
+}
+
+.banner{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 50px;
+    background-color: #6D6DDC;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 40px 20px 40px;
+    color: white;
+    font-size: 20px;
+}
+
+.banner a{
+    border-radius: 30px;
+    background-color: #4444cf;
+    width: fit-content;
+    padding: 15px;
+    margin: 20px;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
