@@ -4,6 +4,50 @@ body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.testiSopraHeader a{
+    text-decoration: none;
+}
+
+.sopraHeader{
+    background-color: gainsboro;
+    padding: 5px;
+}
+
+.testiSopraHeader{
+    list-style: none;
+    display: flex;
+    padding: 1px;
+    margin: 0;
+    justify-content: space-around;
+    font-size: 12px;
+}
+
+.box img{
+    width: 20%;
+    border-radius: 30px;
+}
+
+.box div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box{
+    display: flex;
+    gap: 15px;
+    margin: 30px;
+    justify-items: center;
+    align-items: center;
+}
+
+.homePage{
+   display: flex;
+   flex-direction: column;
+   align-content: center;
+   justify-content: center;
+}
+
 .header{
     position: relative;
     height: fit-content;
@@ -32,7 +76,7 @@ body{
 
 .bottoneHeader:hover{
     background-color: rgb(225, 222, 222);
-    border-radius: 40%;
+    border-radius: 50px;
 }
 
 .bottoniHeaderDestra {
@@ -103,5 +147,5 @@ body{
 }
 
 a{
-    color: black
+    color: black;
 }
