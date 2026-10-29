@@ -1,3 +1,5 @@
+@import url(animazioni.css);
+
 html {
     scrollbar-gutter: stable;
 }
@@ -27,17 +29,16 @@ body{
 }
 
 .box img{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
     scroll-snap-align: start;
+    overflow: hidden;
     width: auto;
     height: 100%;
     border-radius: 30px;
-    background-color: #F0F0EE;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
-
+    animation-name: arrivaDaSinistra;
+    animation-timeline: view();
+    animation-fill-mode: forwards;
+    animation-range: entry 0% cover 40%;
 }
 
 .box div{
@@ -199,16 +200,28 @@ hr{
 }
 
 .banner{
-    margin-top: 30px;
+    position: relative;
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    border-radius: 50px;
-    background-color: #6D6DDC;
     align-items: center;
     justify-content: center;
-    padding: 20px 40px 20px 40px;
-    color: white;
-    font-size: 20px;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.banner img{
+    width: 100%;
+    filter: blur(0.5rem);
+}
+
+.centrato{
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    text-align: center;
 }
 
 .banner a{
