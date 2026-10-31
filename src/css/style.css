@@ -1,5 +1,11 @@
 @import url(animazioni.css);
 
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 html {
     scrollbar-gutter: stable;
 }
@@ -12,6 +18,12 @@ body{
 
 .testiSopraHeader a{
     text-decoration: none;
+}
+
+.contenitorePagina {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .sopraHeader{
@@ -224,7 +236,7 @@ hr{
     text-align: center;
 }
 
-.banner a{
+.banner h3{
     border-radius: 30px;
     background-color: #4444cf;
     width: fit-content;
@@ -235,4 +247,65 @@ hr{
     display: flex;
     align-items: center;
     gap: 10px;
+    font-size: 15px;
+}
+
+.footer {
+    margin-top: auto;
+    background-color: gainsboro;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    font-size: 14px;
+}
+
+.contenutoFooter {
+    display: flex;
+    justify-content: space-around;
+    gap: 10vw;
+    margin: 0 auto;
+}
+
+.parteFooter h3 {
+    margin-top: 0;
+    font-size: 22px;
+}
+
+.parteFooter h4 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-size: 16px;
+}
+
+.parteFooter ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.parteFooter li {
+    margin-bottom: 8px;
+}
+
+.parteFooter a {
+    text-decoration: none;
+    color: #333;
+}
+
+.parteFooter a:hover {
+    text-decoration: underline;
+}
+
+.footer hr{
+    border: none;
+    border-top: 1px solid #ccc;
+    width: 100%;
+}
+
+.footerSotto {
+    text-align: center;
+    font-size: 12px;
+    color: #555;
 }

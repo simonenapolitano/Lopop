@@ -1,10 +1,10 @@
 @keyframes arrivaDaSinistra {
     0% {
         opacity: 0;
-        transform: translateX(-50px); /* Parte da 50px più a sinistra */
+        transform: translateX(-50px); 
     }
     100% {
         opacity: 1;
-        transform: translateX(0); /* Arriva alla posizione originale */
+        transform: translateX(0);
     }
-}    
+}
