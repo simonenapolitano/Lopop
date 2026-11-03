@@ -1,0 +1,45 @@
+@import url(style.css);
+
+.categorie{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.cardCategoria {
+    position: relative;
+    height: 280px;
+    border-radius: 20px;
+    overflow: hidden;
+    text-decoration: none;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cardCategoria:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.cardCategoria img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cardCategoria h4 {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 10px 22px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 15px;
+    color: #111;
+    white-space: nowrap;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
