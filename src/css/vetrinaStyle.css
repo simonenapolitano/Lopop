@@ -5,17 +5,21 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    flex-wrap: wrap;
+}
+
+.categorie h2{
+    font-size: 33px;
 }
 
 .cardCategoria {
     position: relative;
-    height: 280px;
     border-radius: 20px;
     overflow: hidden;
     text-decoration: none;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: block;
+    width: auto;
 }
 
 .cardCategoria:hover {
@@ -24,8 +28,8 @@
 }
 
 .cardCategoria img {
-    width: 100%;
-    height: 100%;
+    width: auto;
+    height: 400px;
     object-fit: cover;
 }
 
@@ -40,6 +44,11 @@
     font-weight: bold;
     font-size: 15px;
     color: #111;
-    white-space: nowrap;
     box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.categorieDiv{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
 }
