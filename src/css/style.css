@@ -144,7 +144,7 @@ body{
     cursor: pointer;
 }
 
-.dropdown-container {
+.containerDropdown {
     position: relative;
     display: flex;
     align-items: center;
@@ -165,8 +165,9 @@ body{
     white-space: nowrap;
 }
 
-.dropdown-container:hover .dropdown {
+.containerDropdown:hover .dropdown {
     display: block;
+    
 }
 
 .logoLocalizzazione{

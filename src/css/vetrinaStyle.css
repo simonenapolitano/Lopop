@@ -52,3 +52,122 @@
     gap: 20px;
     justify-content: center;
 }
+
+.contenitorePaginaProdotti{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin: 15px 125px 10px;
+}
+
+.contenitorePaginaProdotti a{
+    text-decoration: none;
+}
+
+.sopraLista{
+    display: flex;
+    flex-direction: column;
+}
+
+.sopraLista h2{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    font-size: 35px;
+}
+
+.contenitoreLista{
+    display: flex;
+    width: 100%;
+    gap: 45px;
+}
+
+.listaDestinazioni{
+    width: 180px; 
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    flex-shrink: 0;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.listaDestinazioni .containerDropdown {
+    width: fit-content;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.listaDestinazioni a{
+    text-decoration: none;
+}
+
+.listaDestinazioni a:hover{
+    text-decoration: underline;
+}
+
+.listaDestinazioni ul{
+    list-style: none;
+    margin-left: 0;
+}
+
+.dropdownProdotti{
+    display: none;
+    position: static;
+    padding: 10px 0 0 15px;
+    text-align: left;
+    font-size: 14px;
+}
+
+.containerDropdown:hover .dropdownProdotti {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.immaginiProdotti{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    flex-grow: 1;
+}
+
+.linkDisabilitato{
+    color: #999999;
+    pointer-events: none;
+    cursor: default;
+    text-decoration: none;
+}
+
+.cardProdotto{
+    overflow: hidden;
+    text-decoration: none;
+    border-radius: 20px;
+    display: block;
+    width: auto;
+}
+
+.cardProdotto img {
+    border-radius: 20px;
+    background-color: #E5E3DF;
+    width: auto;
+    height: 400px;
+    object-fit: cover;
+}
+
+.infoProdotto{
+    margin: 3px 5px 2px;
+}
+
+.infoProdotto p{
+    margin: 2px;
+}
+
+.prezzo{
+    color: red;
+}
+
