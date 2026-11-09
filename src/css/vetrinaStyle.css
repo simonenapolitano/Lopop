@@ -143,6 +143,20 @@
     text-decoration: none;
 }
 
+.containerDropdown .linkDisabilitato{
+    color: black;
+    pointer-events: none;
+    cursor: default;
+    text-decoration: none;
+}
+
+.dropdownProdotti .linkDisabilitato{
+    color: brown;
+    pointer-events: none;
+    cursor: default;
+    text-decoration: none;
+}
+
 .cardProdotto{
     overflow: hidden;
     text-decoration: none;
