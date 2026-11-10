@@ -64,6 +64,10 @@
     text-decoration: none;
 }
 
+.contenitorePaginaProdotti a:hover{
+    text-decoration: underline;
+}
+
 .sopraLista{
     display: flex;
     flex-direction: column;
@@ -186,3 +190,113 @@
     color: red;
 }
 
+#contatti{
+    display: flex;
+    gap: 30px;
+}
+
+#contatti div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+@media (max-width: 768px) {
+    .categorie h2 {
+        font-size: 26px;
+    }
+
+    .categorieDiv {
+        flex-wrap: wrap;
+        gap: 14px;
+        padding: 0 12px;
+    }
+
+    .cardCategoria {
+        width: min(44vw, 220px);
+    }
+
+    .cardCategoria img {
+        display: block;
+        width: 100%;
+        height: clamp(180px, 55vw, 280px);
+        object-fit: cover;
+    }
+
+    .contenitorePaginaProdotti {
+        margin: 12px 16px;
+    }
+
+    .sopraLista h2 {
+        font-size: 27px;
+    }
+
+    .contenitoreLista {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .listaDestinazioni {
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 10px 18px;
+    }
+
+    .listaDestinazioni .containerDropdown {
+        max-width: 100%;
+    }
+
+    .dropdownProdotti {
+        z-index: 2;
+        background-color: white;
+    }
+
+    .immaginiProdotti {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+        width: 100%;
+    }
+
+    .cardProdotto {
+        min-width: 0;
+        width: 100%;
+    }
+
+    .cardProdotto img {
+        display: block;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 3 / 4;
+        object-fit: cover;
+    }
+
+    .infoProdotto {
+        margin: 4px 2px;
+        font-size: 13px;
+    }
+
+    #contatti {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+}
+
+@media (max-width: 420px) {
+    .contenitorePaginaProdotti {
+        margin-right: 12px;
+        margin-left: 12px;
+    }
+
+    .cardCategoria {
+        width: min(44vw, 180px);
+    }
+
+    .cardCategoria h4 {
+        bottom: 10px;
+        padding: 8px 12px;
+        font-size: 13px;
+    }
+}

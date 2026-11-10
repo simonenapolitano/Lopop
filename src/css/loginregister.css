@@ -68,3 +68,31 @@ button:hover .sideimage{
     justify-content: center;
 }
 
+@media (max-width: 600px) {
+    .container {
+        min-height: 100vh;
+        padding: 16px;
+        box-sizing: border-box;
+    }
+
+    .form {
+        width: 100%;
+        max-width: 500px;
+        min-height: 420px;
+        height: auto;
+        padding: 64px 16px 28px;
+        box-sizing: border-box;
+        gap: 24px;
+    }
+
+    input, button {
+        width: 100%;
+        max-width: 360px;
+        font-size: 16px;
+    }
+
+    button {
+        justify-content: center;
+    }
+}
+
